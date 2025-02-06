@@ -59,12 +59,12 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
 
   @override
   Widget build(BuildContext context) {
-    final tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
+    final tabs = ['Bunny', 'Cat', 'Puppy'];
 
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Tabs Main'),
+        title: Text('Digital Pets ❤️'),
         bottom: TabBar(
           controller: _tabController,
           isScrollable: false,
@@ -75,7 +75,11 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: tabs.map((tab) => Center(child: Text(tab))).toList(),
+        children: [
+          Text('🐰', style: TextStyle(fontSize: 75)),
+          Text('🐱', style: TextStyle(fontSize: 75)),
+          Text('🐶', style: TextStyle(fontSize: 75))
+        ],
       ),
     );
   }

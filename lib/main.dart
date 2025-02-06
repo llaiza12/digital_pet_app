@@ -76,9 +76,14 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
       body: TabBarView(
         controller: _tabController,
         children: [
-          Text('🐰', style: TextStyle(fontSize: 75)),
-          Text('🐱', style: TextStyle(fontSize: 75)),
-          Text('🐶', style: TextStyle(fontSize: 75))
+          Text(
+              "🐰 ~ Hi! I'm Hopps, your digital pet bunny, and I like carrots!! 🥕",
+              style: TextStyle(fontSize: 75)),
+          Text("🐱 ~ Meow! I'm Kit, your digital pet cat, and I like yarn 🧶",
+              style: TextStyle(fontSize: 75)),
+          Text(
+              "🐶 ~ Woof! I'm Snoopy, your digital pet puppy, and I like to play fetch",
+              style: TextStyle(fontSize: 75)),
         ],
       ),
     );
